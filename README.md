@@ -18,7 +18,7 @@ This undertaking aims to guide ThomasTrain in enhancing its services and custome
  
 In this section, we outline the methodologies we adopted for our project. Our approach was multi-faceted, involving a blend of data handling, visualization, and machine learning techniques. 
  
-# Explanatory Data Analysis (EDA): 
+Explanatory Data Analysis (EDA): 
 Data Handling and Visualization Tools: We started with the basics, utilizing Pandas for managing our dataset. For visualization, we turned to Matplotlib and Seaborn, which were great for everything from basic plots to more complex statistical graphs. 
    
 Initial Data Inspection: After loading our dataset into a Pandas Data Frame, we used functions like “head()” for a sneak peek into its structure. This step was crucial for setting up our subsequent analysis. 
@@ -31,7 +31,7 @@ Data Transformation: The categorical 'Satisfied' column was encoded into numeric
  
 Correlation Analysis: This was a game-changer. By plotting a heatmap, we could see how different features related to customer satisfaction. It helped us pinpoint which variables might be key players. 
  
-# Data Preprocessing and Pipeline Construction: 
+Data Preprocessing and Pipeline Construction: 
 Feature Selection and Splitting: Post-EDA, we separated our target variable “Satisfied” and identified key numerical and categorical columns for modeling. 
  
 Pipeline Setup: We built a machine learning pipeline using Scikit-learn's “Pipeline” and “ColumnTransformer”. This helped us neatly bundle our preprocessing steps, handling numerical and categorical data separately but in parallel. 
@@ -41,7 +41,7 @@ Pipeline Setup: We built a machine learning pipeline using Scikit-learn's “Pip
  
 Training and Test Split: We split our dataset into training and test sets (80-20 split), and further partitioned the training data to create a validation set. This setup was essential for unbiased model evaluation. 
  
-# Further EDA and Machine Learning Warnings: 
+Further EDA and Machine Learning Warnings: 
 Deeper Dive into Data: We revisited our numerical data, plotting histograms to catch any nuances we might have missed initially. The correlation matrix also got a second look, helping us refine our feature selection. 
    
 Handling Machine Learning Warnings: We encountered convergence warnings with logistic regression, which we addressed by adjusting the number of iterations and ensuring proper data scaling. 
@@ -57,15 +57,15 @@ Learning Curves and Performance Evaluation: We plotted learning curves to unders
  
 # Section 3: Experimental Design 
  
-# Introduction to Experimental Approach: 
+Introduction to Experimental Approach: 
 Our experimental design focused on accurately predicting customer satisfaction and identifying the most impactful features. This approach encompassed comprehensive analysis, model selection, and evaluation. 
  
-# Choice of Models and Baseline Establishment: 
+Choice of Models and Baseline Establishment: 
 Logistic Regression: Selected for its computational efficiency and interpretability, serving as a foundational benchmark. 
 Decision Trees: Chosen for their ability to model non-linear relationships and interpretability, without the need for feature scaling. 
 Random Forest: An ensemble of Decision Trees, aimed to enhance performance and stability, reducing overfitting risks and better handling varied features and interactions. 
  
-# Detailed Evaluation Metrics: 
+Detailed Evaluation Metrics: 
 Accuracy: Assessed the overall performance of the models. 
 Precision: Important for minimizing false positives in customer satisfaction prediction. 
 Recall: Crucial for correctly identifying all instances of dissatisfaction. 
@@ -74,13 +74,13 @@ ROC-AUC Score: Measured the models' ability to distinguish between satisfied and
  
 These metrics were integral to a holistic assessment of the models. 
  
-# Hyperparameter Tuning and Validation: 
+Hyperparameter Tuning and Validation: 
 We employed a randomized search for hyperparameter tuning, offering an efficient alternative to the more exhaustive grid search. 
  
-# Learning Curve Analysis: 
+Learning Curve Analysis: 
 Learning curves helped us understand model performance dynamics, identifying issues of high variance (overfitting) or high bias (underfitting), and guiding our decisions on data augmentation or model complexity adjustments. 
  
-# Final Model Selection Based on Validation Performance: 
+Final Model Selection Based on Validation Performance: 
  
 We analyzed the validation performance of each model using the metrics mentioned earlier. The best-performing models were then re-trained on the full training dataset, including the validation data, to fully harness their predictive power. 
  
@@ -95,38 +95,38 @@ Our experimental design was meticulously crafted to ensure a balance between pre
  
 # Section 4: Results 
  
-# Comparative Model Analysis: 
+Comparative Model Analysis: 
  
 Upon the comprehensive evaluation of the models, the Random Forest and Decision Tree classifiers demonstrated considerable predictive capabilities in forecasting customer satisfaction for the ThomasTrain company. The Random Forest model, with its ensemble approach, achieved a commendable accuracy of 85%, showcasing its robustness through high precision (0.97) for the positive class (satisfied customers). However, it faltered slightly in recall (0.67), suggesting a tendency to overlook certain satisfied customers. The ROC AUC score of 0.942 indicated strong discriminative power. 
  
 The Decision Tree model, on the other hand, presented a superior balance across all metrics, achieving an impressive accuracy of 95%. With precision and recall both above 0.93 and an F1-Score of 0.94, this model demonstrated an exceptional ability to identify satisfied customers without significant compromise. Its ROC AUC score of 0.981 suggested excellent classification capabilities. 
  
-# Learning Curve Interpretations: 
+Learning Curve Interpretations: 
 The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced. 
  
    
  
  
-# Justification for Model Selection: 
+Justification for Model Selection: 
 Considering all metrics and learning curve analyses, the Decision Tree was selected as the preferred model. Its exemplary balance of precision and recall, coupled with the highest F1-Score and ROC AUC score, indicated a model well-fitted to the data without overcomplicating the underlying structure. Furthermore, its learning curve suggested that the model was learning efficiently and was less likely to benefit from additional data, which is an important consideration in a production environment where the economy of data can be a constraint. 
  
-# Interpretation of Model Outcomes: 
+Interpretation of Model Outcomes: 
 The performance metrics indicate that while the Random Forest model was more cautious in predicting satisfaction, leading to high precision but lower recall, the Decision Tree model managed to maintain high standards across all metrics. This suggests that the Decision Tree model was able to capture the complexity of customer satisfaction without being overly stringent or too lenient in its predictions. 
  
   
  
  
-# Conclusion: 
+Conclusion: 
 In the final analysis, while both models showed strengths, the Decision Tree model's exceptional performance across precision, recall, F1-Score, and ROC AUC score, along with its learning curve profile, affirmed its selection as the optimal model for this project. It demonstrated not only high accuracy but also the capability to generalize well, ensuring reliability in predicting customer satisfaction for the ThomasTrain company. 
  
  
 # Section 5: Conclusions 
  
-# Synthesis of Project Insights: 
+Synthesis of Project Insights: 
  
 We concluded that the Decision Tree model is the best tool for predicting customer satisfaction for the ThomasTrain company. This model not only achieved high accuracy but also provided proper interpretability that can be used from a business point of view. It has proven to be adept at navigating the complexity of customer data, offering a balance between the precision of predictions and the ability to capture most satisfied customers. The essential take-away from our work is that customer satisfaction can indeed be predicted with a significant degree of accuracy using machine learning models. Moreover, the project underscores the importance of choosing models that not only perform well statistically but also align with business goals and practical usability. 
  
-# Unanswered Questions and Future Directions: 
+Unanswered Questions and Future Directions: 
  
  
 While the Decision Tree model worked well for us, it makes us wonder if a more complex model could find deeper insights without making it hard to understand. Also, we didn't fully check how customer satisfaction changes over time and if models could learn and predict these changes. We could've also used unsupervised learning to find hidden patterns in the customer base. 
