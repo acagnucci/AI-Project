@@ -1,6 +1,5 @@
 # AI-Project
-This is the machine learning project 281671
-
+This is the machine learning project report 281671
 
 # Section 1: Introduction 
  
@@ -27,14 +26,10 @@ Initial Data Inspection: After loading our dataset into a Pandas Data Frame, we 
 Understanding the Dataset: We dove deeper into the dataset's anatomy by looking at its shape, data types, missing values, and unique values. This comprehensive overview was vital for tailoring our preprocessing strategies. 
  
 Visual Exploration: We graphed the distribution of numerical features and the target variable “Satisfied”. Histograms and KDE plots gave us insights into the skewness and spread of our data, guiding our normalization efforts. 
-
-![.](images/histo.png)
-![.](images/distribution.png)
  
 Data Transformation: The categorical 'Satisfied' column was encoded into numerical values, a necessary step for the classification models we intended to use. 
  
 Correlation Analysis: This was a game-changer. By plotting a heatmap, we could see how different features related to customer satisfaction. It helped us pinpoint which variables might be key players. 
-![.](images/m1.png)
  
 Data Preprocessing and Pipeline Construction: 
 Feature Selection and Splitting: Post-EDA, we separated our target variable “Satisfied” and identified key numerical and categorical columns for modeling. 
@@ -48,8 +43,6 @@ Training and Test Split: We split our dataset into training and test sets (80-20
  
 Further EDA and Machine Learning Warnings: 
 Deeper Dive into Data: We revisited our numerical data, plotting histograms to catch any nuances we might have missed initially. The correlation matrix also got a second look, helping us refine our feature selection. 
-![.](images/h2.png)
-![.](images/m2.png)
    
 Handling Machine Learning Warnings: We encountered convergence warnings with logistic regression, which we addressed by adjusting the number of iterations and ensuring proper data scaling. 
  
@@ -109,10 +102,7 @@ Upon the comprehensive evaluation of the models, the Random Forest and Decision 
 The Decision Tree model, on the other hand, presented a superior balance across all metrics, achieving an impressive accuracy of 95%. With precision and recall both above 0.93 and an F1-Score of 0.94, this model demonstrated an exceptional ability to identify satisfied customers without significant compromise. Its ROC AUC score of 0.981 suggested excellent classification capabilities. 
  
 Learning Curve Interpretations: 
-The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced..
-
-![Random forests learning curve:](images/1.png)
-![Decision trees learning curve:](images/2.png)
+The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced. 
  
    
  
@@ -123,7 +113,7 @@ Considering all metrics and learning curve analyses, the Decision Tree was selec
 Interpretation of Model Outcomes: 
 The performance metrics indicate that while the Random Forest model was more cautious in predicting satisfaction, leading to high precision but lower recall, the Decision Tree model managed to maintain high standards across all metrics. This suggests that the Decision Tree model was able to capture the complexity of customer satisfaction without being overly stringent or too lenient in its predictions. 
  
-![.](images/Screenshot%202023-12-05%20at%2020.34.36.png)
+  
  
  
 Conclusion: 
