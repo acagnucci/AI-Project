@@ -29,7 +29,8 @@ Visual Exploration: We graphed the distribution of numerical features and the ta
  
 Data Transformation: The categorical 'Satisfied' column was encoded into numerical values, a necessary step for the classification models we intended to use. 
 
-![.](images/histo.png)
+<img width="860" alt="histo" src="https://github.com/acagnucci/AI-Project/assets/150381254/dd77c5f8-c3b4-44ce-9afc-e4e9c98042b5">
+
 ![.](images/distribution.png)
  
 Correlation Analysis: This was a game-changer. By plotting a heatmap, we could see how different features related to customer satisfaction. It helped us pinpoint which variables might be key players. 
