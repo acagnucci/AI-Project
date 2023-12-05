@@ -109,7 +109,7 @@ Upon the comprehensive evaluation of the models, the Random Forest and Decision 
 The Decision Tree model, on the other hand, presented a superior balance across all metrics, achieving an impressive accuracy of 95%. With precision and recall both above 0.93 and an F1-Score of 0.94, this model demonstrated an exceptional ability to identify satisfied customers without significant compromise. Its ROC AUC score of 0.981 suggested excellent classification capabilities. 
  
 Learning Curve Interpretations: 
-The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced. 
+The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced..
 
 ![Random forests learning curve:](images/1.png)
 ![Decision trees learning curve:](images/2.png)
