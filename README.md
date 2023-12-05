@@ -31,11 +31,13 @@ Data Transformation: The categorical 'Satisfied' column was encoded into numeric
 
 <img width="860" alt="histo" src="https://github.com/acagnucci/AI-Project/assets/150381254/dd77c5f8-c3b4-44ce-9afc-e4e9c98042b5">
 
-![.](images/distribution.png)
+<img width="378" alt="distribution" src="https://github.com/acagnucci/AI-Project/assets/150381254/8d55be32-f395-488e-88cf-3329dd86c0a6">
+
  
 Correlation Analysis: This was a game-changer. By plotting a heatmap, we could see how different features related to customer satisfaction. It helped us pinpoint which variables might be key players. 
 
-![.](images/m1.png)
+<img width="829" alt="m1" src="https://github.com/acagnucci/AI-Project/assets/150381254/51613ead-db24-435b-90de-0c403c881989">
+
  
 Data Preprocessing and Pipeline Construction: 
 Feature Selection and Splitting: Post-EDA, we separated our target variable “Satisfied” and identified key numerical and categorical columns for modeling. 
@@ -50,8 +52,10 @@ Training and Test Split: We split our dataset into training and test sets (80-20
 Further EDA and Machine Learning Warnings: 
 Deeper Dive into Data: We revisited our numerical data, plotting histograms to catch any nuances we might have missed initially. The correlation matrix also got a second look, helping us refine our feature selection. 
 
-![.](images/h2.png)
-![.](images/m2.png)
+<img width="1185" alt="h2" src="https://github.com/acagnucci/AI-Project/assets/150381254/4edc5595-45d6-4503-97ae-cd0f02cef7da">
+
+<img width="765" alt="m2" src="https://github.com/acagnucci/AI-Project/assets/150381254/288d6cc2-e399-4caf-901b-2e9806958737">
+
 Handling Machine Learning Warnings: We encountered convergence warnings with logistic regression, which we addressed by adjusting the number of iterations and ensuring proper data scaling. 
  
 Model Training and Hyperparameter Tuning: 
@@ -112,9 +116,10 @@ The Decision Tree model, on the other hand, presented a superior balance across 
 Learning Curve Interpretations: 
 The learning curves provided further insight into model performance. For the Random Forest, the initial disparity between training and validation scores indicated overfitting; however, additional training data seemed to mitigate this gap, improving model generalization. The Decision Tree's learning curves showed a strong start with less variance between training and validation scores, indicating a stable and consistent performance that was maintained as more data was introduced. 
 
-![Random forests learning curve](images/1.png)
-![Decision trees learning curve](images/1.png)
- 
+<img width="399" alt="1" src="https://github.com/acagnucci/AI-Project/assets/150381254/bb4dba27-5304-4ff4-9325-bddbee47733f">
+
+<img width="393" alt="2" src="https://github.com/acagnucci/AI-Project/assets/150381254/af12380e-d6f1-4949-98c3-237dc920a65a">
+
    
  
  
@@ -124,8 +129,9 @@ Considering all metrics and learning curve analyses, the Decision Tree was selec
 Interpretation of Model Outcomes: 
 The performance metrics indicate that while the Random Forest model was more cautious in predicting satisfaction, leading to high precision but lower recall, the Decision Tree model managed to maintain high standards across all metrics. This suggests that the Decision Tree model was able to capture the complexity of customer satisfaction without being overly stringent or too lenient in its predictions. 
  
- ![.](images/Screenshot%202023-12-05%20at%2020.34.36.png)
-  
+
+  <img width="680" alt="Screenshot 2023-12-05 at 20 34 36" src="https://github.com/acagnucci/AI-Project/assets/150381254/9665d81d-8c06-45c1-a9f3-6212144b979c">
+
  
  
 Conclusion: 
