@@ -2,7 +2,7 @@
 
 Final report 
  
-Section 1: Introduction 
+# Section 1: Introduction 
  
 Team Members: 
 Edoardo Brown 281671
@@ -15,7 +15,7 @@ We used exploratory data analysis (EDA) to identify trends and relationships. We
  
 Our goal was to improve customer retention and our services by employing a blend of data preprocessing, analysis, and advanced machine learning techniques. In the following sections we detail our methods, experimental design and results in a more precise way.  
  
-Section 2: Methods 
+# Section 2: Methods 
  
 In this section, we outline the methods used for our project. Our approach involved a blend of data handling, visualization, and machine learning techniques.  
  
@@ -82,7 +82,7 @@ Tuning Hyperparameters: Using “RandomizedSearchCV”, we fine-tuned our models
  
 Learning Curves and Performance Evaluation: We plotted learning curves to understand our models' behavior with increasing data. The final performance was evaluated on the test set using metrics like accuracy, precision, recall, F1-score, and ROC-AUC score. 
  
-Section 3: Experimental Design 
+# Section 3: Experimental Design 
  
 Introduction to Experimental Approach: 
 Our experimental design focused on accurately predicting customer satisfaction and identifying the most impactful features. This approach encompassed comprehensive analysis, model selection, and evaluation. 
