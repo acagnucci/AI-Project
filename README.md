@@ -1,14 +1,13 @@
 # AI-Project
-This is the machine learning project report 281671
 
 Final report 
  
 Section 1: Introduction 
  
 Team Members: 
-Edoardo Brown 
-Antonio Cagnucci 
-Omar Regragui 
+Edoardo Brown 281671
+Antonio Cagnucci 289871
+Omar Regragui 282511
  
 Our project focuses on enhancing customer satisfaction prediction for the ThomasTrain Company, merging data science with customer service. We analyzed the "trains_dataset.csv," rich in variables like demographic info, travel details, and service ratings. Our challenge was to predict customer satisfaction indirectly, through data patterns, rather than direct feedback. 
  
