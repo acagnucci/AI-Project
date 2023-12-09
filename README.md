@@ -1,14 +1,13 @@
 # AI-Project
-This is the machine learning project report 281671
 
 Final report 
  
-Section 1: Introduction 
+# Section 1: Introduction 
  
 Team Members: 
-Edoardo Brown 
-Antonio Cagnucci 
-Omar Regragui 
+Edoardo Brown 281671
+Antonio Cagnucci 289871
+Omar Regragui 282511
  
 Our project focuses on enhancing customer satisfaction prediction for the ThomasTrain Company, merging data science with customer service. We analyzed the "trains_dataset.csv," rich in variables like demographic info, travel details, and service ratings. Our challenge was to predict customer satisfaction indirectly, through data patterns, rather than direct feedback. 
  
@@ -16,7 +15,7 @@ We used exploratory data analysis (EDA) to identify trends and relationships. We
  
 Our goal was to improve customer retention and our services by employing a blend of data preprocessing, analysis, and advanced machine learning techniques. In the following sections we detail our methods, experimental design and results in a more precise way.  
  
-Section 2: Methods 
+# Section 2: Methods 
  
 In this section, we outline the methods used for our project. Our approach involved a blend of data handling, visualization, and machine learning techniques.  
  
@@ -83,7 +82,7 @@ Tuning Hyperparameters: Using “RandomizedSearchCV”, we fine-tuned our models
  
 Learning Curves and Performance Evaluation: We plotted learning curves to understand our models' behavior with increasing data. The final performance was evaluated on the test set using metrics like accuracy, precision, recall, F1-score, and ROC-AUC score. 
  
-Section 3: Experimental Design 
+# Section 3: Experimental Design 
  
 Introduction to Experimental Approach: 
 Our experimental design focused on accurately predicting customer satisfaction and identifying the most impactful features. This approach encompassed comprehensive analysis, model selection, and evaluation. 
@@ -118,7 +117,7 @@ Conclusive Remarks:
 Our experimental design was meticulously crafted to ensure a balance between predictive power and interpretability. By selecting appropriate models, evaluation metrics, and methodologies, we aimed to create a robust and comprehensive approach, tailored to the project's needs in predicting customer satisfaction. 
  
  
-Section 4: Results 
+# Section 4: Results 
  
 Comparative Model Analysis: 
  
@@ -149,6 +148,19 @@ The performance metrics indicate that while the Random Forest model was more cau
  
 Conclusion: 
 In the final analysis, while both models showed strengths, the Decision Tree model's exceptional performance across precision, recall, F1-Score, and ROC AUC score, along with its learning curve profile, affirmed its selection as the optimal model for this project. It demonstrated not only high accuracy but also the capability to generalize well, ensuring reliability in predicting customer satisfaction for the ThomasTrain company. 
+
+
+# Section 5: Conclusions 
+ 
+Synthesis of Project Insights: 
+ 
+We concluded that the Decision Tree model is the best tool for predicting customer satisfaction for the ThomasTrain company. This model not only achieved high accuracy but also provided proper interpretability that can be used from a business point of view. It has proven to be adept at navigating the complexity of customer data, offering a balance between the precision of predictions and the ability to capture most satisfied customers. The essential take-away from our work is that customer satisfaction can indeed be predicted with a significant degree of accuracy using machine learning models. Moreover, the project underscores the importance of choosing models that not only perform well statistically but also align with business goals and practical usability. 
+ 
+Unanswered Questions and Future Directions: 
+ 
+While the Decision Tree model worked well for us, it makes us wonder if a more complex model could find deeper insights without making it hard to understand. Also, we didn't fully check how customer satisfaction changes over time and if models could learn and predict these changes. We could've also used unsupervised learning to find hidden patterns in the customer base. 
+ 
+For future work, we should think about using models that can handle data over time, like recurrent neural networks, or try unsupervised learning for customer segmentation. Also, we should dig deeper into how features are created to find more relationships in the data. Adding external information, like economic indicators or trends in transportation, might make the model better. We should keep checking how well the model works as customer behaviors and expectations change. 
  
 
 
